@@ -1,7 +1,7 @@
 # Handover
 
-- **Name:** [Candidate Name]
-- **Email used for this application:** [Candidate Email]
+- **Name:** Pranav Mane
+- **Email used for this application:** pranavmane103@gmail.com
 - **Chosen track:** Track A: Repair the register (Product Engineering)
 - **Why this track:** Track A offers a realistic audit and refactoring scenario focused on financial data integrity, regression testing, and resilient user experience.
 - **Approximate total time, including setup and handover:** ~3.5 hours
@@ -139,12 +139,12 @@ Manual live HTTP interactions against the running server (`python app.py`) confi
 
 ## 5. Tools and Judgment
 
-AI-assisted development tools were utilized during this assessment for codebase analysis, defect diagnosis, and drafting test coverage:
+Google Antigravity was used as an AI-assisted development tool during this assessment for codebase analysis, defect diagnosis, and drafting test coverage. All implementation decisions and verification procedures were directly reviewed, evaluated, and tested during the assessment:
 1. **Idempotency Strategy:** An AI suggestion proposed adding a `UNIQUE(customer_id, invoice_number)` constraint to the SQLite schema. *Decision:* Rejected altering the schema to avoid complex table recreation migrations on the existing database. Instead, implemented the uniqueness and conflict checks in `storage.insert_invoice()`, ensuring 100% backward compatibility with existing fixture data.
 2. **Monetary Formatting:** Explored using Python's `decimal.Decimal` module across all layers. *Decision:* Kept the existing float storage structure to prevent breaking API contracts, but eliminated truncation by replacing `int(x * 100) / 100` with standard round-to-cents formatting (`f"{round(float(val), 2):.2f}"`), verified via regex and exact value assertions.
 3. **Customer Filter UI:** An AI proposal suggested hardcoding the customer list in JavaScript. *Decision:* Dynamically populated customer options from `overview.customers` (and exposed `/api/customers`), keeping the UI responsive to database state.
 
-All generated code and tests were manually reviewed, executed, and validated.
+All implementation decisions, generated code, and tests were manually reviewed, executed, and validated locally.
 
 ---
 
@@ -156,8 +156,8 @@ All generated code and tests were manually reviewed, executed, and validated.
 - [ ] Automated tests pass cleanly (`python -m unittest discover -s tests -v`).
 - [ ] Public repository or download link prepared.
 
-### Applicant Details Placeholder
-* **GitHub Repository URL:** `[Your Repository URL]`
-* **GitHub Profile URL:** `[Your GitHub Profile URL]`
+### Applicant Links
+* **GitHub Repository URL:** https://github.com/Paannyy/mystri-track-a-invoice-register
+* **GitHub Profile URL:** https://github.com/Paannyy
 * **LinkedIn URL:** `[Your LinkedIn Profile URL]`
 * **Resume:** `[Attached / Link]`
