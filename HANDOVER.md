@@ -159,5 +159,5 @@ All implementation decisions, generated code, and tests were manually reviewed, 
 ### Applicant Links
 * **GitHub Repository URL:** https://github.com/Paannyy/mystri-track-a-invoice-register
 * **GitHub Profile URL:** https://github.com/Paannyy
-* **LinkedIn URL:** `[Your LinkedIn Profile URL]`
-* **Resume:** `[Attached / Link]`
+* **LinkedIn URL:** https://www.linkedin.com/in/pranav-mane-791201267
+* **Resume:** Pranav_Mane_Resume.pdf — submitted as the candidate's resume attachment with the assessment submission.
